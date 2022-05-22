@@ -30,7 +30,7 @@ def get_single_movie_cast(movie_id):
     endpoint = f"https://api.themoviedb.org/3/movie/{movie_id}/credits"
     headers = get_headers()
     response = requests.get(endpoint, headers=headers)
-    return response.json()["cast"]
+    return response.json()
 
 
 def get_movie_images(movie_id):
